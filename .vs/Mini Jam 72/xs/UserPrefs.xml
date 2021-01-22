@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{3B87E508-81CE-7A36-F679-719EAE4DA2FB}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="21" Column="53" />
-      <File FileName="Assets/Scripts/BetterJump.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/BetterJump.cs" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="17" Column="6" />
     </Files>
     <Pads>
@@ -15,7 +15,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="02f9e2ed-065a-4380-8743-7318a847d51e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="43a0c944-2e2c-4b9b-a7b1-6fcb702ca080" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

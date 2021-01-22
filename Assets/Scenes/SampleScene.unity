@@ -355,9 +355,10 @@ GameObject:
   - component: {fileID: 1881569417}
   - component: {fileID: 1881569418}
   - component: {fileID: 1881569419}
+  - component: {fileID: 1881569420}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: PlayerGhost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -489,10 +490,9 @@ MonoBehaviour:
   ghostSpeed: 10
   jumpSpeed: 5
   isGrounded: 0
-  airSpeed: 0
   rb: {fileID: 0}
   boxCollider: {fileID: 0}
-  isDead: 0
+  isDead: 1
 --- !u!114 &1881569419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +507,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
+--- !u!58 &1881569420
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881569413}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.09
 --- !u!1 &2125659227
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +535,7 @@ GameObject:
   - component: {fileID: 2125659230}
   - component: {fileID: 2125659229}
   - component: {fileID: 2125659228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Moving Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}

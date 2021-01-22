@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 5f;
 
     public bool isGrounded;
-    public float airSpeed; 
 
     public Rigidbody2D rb;
     public BoxCollider2D boxCollider;
@@ -25,12 +24,15 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead)
         {
+            this.tag = "PlayerGhost";
             rb.velocity = new Vector2(ghostSpeed * Input.GetAxisRaw("Horizontal"), ghostSpeed * Input.GetAxisRaw("Vertical"));
             rb.gravityScale = 0;
             boxCollider.enabled = false;
+
         }
         else
         {
+            this.tag = "Player";
             rb.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
             rb.gravityScale = 1;
             boxCollider.enabled = true;

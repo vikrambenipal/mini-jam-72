@@ -18,8 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("works");
-        if(other.tag == "Player")
+        if (other.tag == "PlayerGhost")
         {
             other.gameObject.SetActive(false);
             isPossesed = true;
@@ -31,10 +30,11 @@ public class Enemy : MonoBehaviour
     {
         if (!isPossesed)
         {
-
+            // ai movement 
         }
         else
         {
+            // player input 
             rb.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
         }
     }
