@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{3B87E508-81CE-7A36-F679-719EAE4DA2FB}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BetterJump.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="9" Column="33" />
+      <File FileName="Assets/Scripts/BetterJump.cs" Line="7" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mini Jam 72" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="02f9e2ed-065a-4380-8743-7318a847d51e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
