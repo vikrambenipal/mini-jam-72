@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(ghostSpeed * Input.GetAxisRaw("Horizontal"), ghostSpeed * Input.GetAxisRaw("Vertical"));
             rb.gravityScale = 0;
             boxCollider.enabled = false;
-
         }
         else
         {

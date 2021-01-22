@@ -22,22 +22,13 @@ public class Enemy : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             isPossesed = true;
+            gameObject.layer = LayerMask.NameToLayer("EnemyCapture");
         }
-        
-    }
 
-    private void Update()
-    {
-        if (!isPossesed)
+        if(LayerMask.LayerToName(other.gameObject.layer) == "EnemyCapture" && !isPossesed)
         {
-            // ai movement 
-        }
-        else
-        {
-            // player input 
-            rb.velocity = new Vector2(moveSpeed * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
+            other.gameObject.SetActive(false);
+            isPossesed = true;
         }
     }
-
-
 }
