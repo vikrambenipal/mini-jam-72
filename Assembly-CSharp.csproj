@@ -65,9 +65,11 @@
     <Compile Include="Assets\Scripts\BetterJump.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FlyingEnemy.cs" />
+    <Compile Include="Assets\Scripts\ItemFloat.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Spike.cs" />
+    <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\TankEnemy.cs" />
     <Compile Include="Assets\Scripts\ZombieEnemy.cs" />
     <Reference Include="Unity.Timeline.Editor">

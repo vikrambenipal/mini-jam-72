@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
     public BoxCollider2D boxCollider;
     public bool isDead;
 
+    public bool gameOver;
+    public float ghostTime = 5f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,6 +34,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(ghostSpeed * Input.GetAxisRaw("Horizontal"), ghostSpeed * Input.GetAxisRaw("Vertical"));
             rb.gravityScale = 0;
             boxCollider.enabled = false;
+
+            StartCoroutine(GhostRoutine());
         }
         else
         {
@@ -45,5 +50,12 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = Vector2.up * jumpSpeed;
             }
         }
+    }
+
+    IEnumerator GhostRoutine()
+    {
+        yield return new WaitForSeconds(ghostTime);
+        gameOver = true;
+        Debug.Log("game over");
     }
 }
