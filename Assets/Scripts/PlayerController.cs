@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float ghostSpeed = 10f;
     public float jumpSpeed = 5f;
+    public Animator animator; 
 
     public bool isGrounded;
 
@@ -18,12 +19,14 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
     {
         if (isDead)
         {
+            animator.SetBool("isDead", true);
             this.tag = "PlayerGhost";
             rb.velocity = new Vector2(ghostSpeed * Input.GetAxisRaw("Horizontal"), ghostSpeed * Input.GetAxisRaw("Vertical"));
             rb.gravityScale = 0;

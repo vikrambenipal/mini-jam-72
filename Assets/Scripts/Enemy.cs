@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "PlayerGhost")
+        if (other.tag == "PlayerGhost" || other.tag == "Player")
         {
             other.gameObject.SetActive(false);
             isPossesed = true;
