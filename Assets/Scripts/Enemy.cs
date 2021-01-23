@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             isPossesed = true;
+            gameObject.layer = LayerMask.NameToLayer("EnemyCapture");
         }
     }
 }
