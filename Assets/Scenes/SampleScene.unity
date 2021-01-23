@@ -1403,9 +1403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5717551af897e4dfbb41d2ac4e437044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   ghostSpeed: 10
-  jumpSpeed: 5
+  jumpSpeed: 7
   animator: {fileID: 0}
   isGrounded: 0
   rb: {fileID: 0}
@@ -1425,8 +1425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971df84a30a5b4ff7964a8b013a949d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
+  fallMultiplier: 3
+  lowJumpMultiplier: 3.2
 --- !u!58 &1881569420
 CircleCollider2D:
   m_ObjectHideFlags: 0
